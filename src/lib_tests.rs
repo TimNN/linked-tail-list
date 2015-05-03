@@ -1,5 +1,4 @@
 use std::fmt::Debug;
-use test;
 use super::{swap_places, TailList, Link, LinkOwn, OwnRef};
 
 /// List validation utility, see method documentation
@@ -97,7 +96,7 @@ fn fill_and_drop() {
         validate!(v);
     }
 
-    drop(test::black_box(list));
+    drop(list);
 }
 
 #[test]

@@ -19,10 +19,6 @@
 //! An active item may temporarily transfer ownership of it's owned node to
 //! another item by creating a mutable borrow to itself.
 
-#![cfg_attr(test, feature(test))]
-
-#[cfg(test)] extern crate test;
-
 use std::cell::UnsafeCell;
 use std::marker::PhantomData;
 use std::mem;
