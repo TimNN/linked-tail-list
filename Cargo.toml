@@ -1,0 +1,8 @@
+[package]
+name = "linked-tail-list"
+version = "0.0.1"
+authors = ["TimNN <mail@timnn.me>"]
+
+[features]
+
+test_no_validate = []
