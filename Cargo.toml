@@ -1,7 +1,19 @@
 [package]
 name = "linked-tail-list"
 version = "0.0.1"
-authors = ["TimNN <mail@timnn.me>"]
+authors = ["Tim Neumann <mail@timnn.me>"]
+
+description = "A specialized linked list"
+
+documentation = "https://timnn.github.io/linked-tail-list/"
+homepage = "https://github.com/TimNN/linked-tail-list"
+repository = "https://github.com/TimNN/linked-tail-list"
+
+readme = "README.md"
+
+keywords = ["data-structures"]
+
+license = "MIT"
 
 [features]
 
