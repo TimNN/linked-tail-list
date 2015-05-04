@@ -12,8 +12,13 @@ before_script:
 script:
     - |
         travis-cargo build &&
-        travis-cargo test
+        travis-cargo test &&
+        travis-cargo --only beta doc
+
+after_success:
+    - travis-cargo --only beta doc-upload
 
 env:
     global:
         - TRAVIS_CARGO_NIGHTLY_FEATURE=""
+        - secure: DcCFZa/0LPztmW1zSkOlMP7lF2ItJciMliYOB5s36QbG7V98NmTy2b+D+JHYO7uKMZQHwFNROH9PbUEOFF4EudUqxAQRGkDCAoaOMDYgjzlNErB4o7WOBIFAqHjfinjsqBrCH/akdXL6OfKjJLHR7rTS9Z2dhSNJYVrEzd7tnyg=
